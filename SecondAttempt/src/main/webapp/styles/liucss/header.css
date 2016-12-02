@@ -1,0 +1,99 @@
+.navbar-nav>li>a {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.navbar-brand {
+height: 40px;
+padding-top: 2px;
+}
+.navbar {
+min-height: 60px;
+/*margin-bottom:10px;*/
+}
+.navbar-toggle {
+margin-top: 4px;
+margin-bottom: 4px;
+}
+.image
+{
+width:151px;
+height:55px;
+}
+
+.navbar-nav>li>a
+{
+padding-top:20px;
+padding-bottom:20px;
+margin-top:0px;
+margin-bottom:0px;
+display:block;
+}
+.leftimage
+{
+float:left;
+width:64px;
+height:55px;
+}
+#bs-example-navbar-collapse-1>ul>li>a:hover
+{
+color:red;
+}
+.num
+{
+	position: absolute;
+    top: 12px;
+    right: 0px;
+    color: white;
+    background-color: black;
+    width: 16px;
+    text-align: center;
+    height: 16px;
+    line-height: 16px;
+    font-size: 10px;
+}
+.blackcircle
+{
+position:absolute;
+top:10px;
+right:0px;
+}
+#bs-example-navbar-collapse-1>ul>li>ul
+{
+background-color:#666666;
+maring-top:0px;
+margin-bottom:0px;
+padding-top:0px;
+padding-bottom:0px;
+}
+#bs-example-navbar-collapse-1>ul>li>ul>li>a
+{
+height:36px;
+line-height:36px;
+color:white;
+font-size:10px;
+}
+.lititle
+{
+height:36px;
+line-height:36px;
+color:white;
+font-size:10px;
+padding-left:15px;
+}
+#bs-example-navbar-collapse-1>ul>li>ul>li>a:hover
+{
+background-color:#000000;
+}
+.bigclassify
+{
+border-bottom:1px solid gray;
+}
+.bigbigclassify
+{
+border-bottom:1px solid gray;
+border-top:1px solid gray;
+}
+.smallclassify
+{
+text-align:center;
+}

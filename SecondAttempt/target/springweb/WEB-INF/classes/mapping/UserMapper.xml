@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pack.dao.UserDao" >
+  <resultMap id="BaseResultMap" type="com.pack.bean.User" >
+    <result column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="age" property="age" jdbcType="INTEGER" />
+    <result column="roleid" property="roleid" jdbcType="INTEGER"/>
+  </resultMap>
+    <sql id="Base_Column_List" >
+        id, username, password,roleid
+    </sql>
+
+   <select id="selectByPrimaryKey" parameterType="int" resultType="com.pack.bean.User">
+        select * from `user` where user.id = #{id}
+   </select>
+
+    <select id="sele"  resultType="com.pack.bean.User" >
+        select * from `user` where user.name = #{name} and user.password =#{password}
+    </select>
+
+    <select id="getPermission" parameterType="String" resultType="String">
+        select p.permissionname from user u,role r,permission p
+        where u.roleid=r.id and p.roleid=r.id and u.name=#{name}
+    </select>
+
+    <select id="getRole" parameterType="String" resultType="String">
+        select r.rolename from user u,role r where u.roleid=r.id and u.name=#{name}
+    </select>
+
+</mapper>
